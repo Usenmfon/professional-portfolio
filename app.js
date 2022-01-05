@@ -1,7 +1,7 @@
 const openbtn = document.getElementById('openbtn')
+var links = document.getElementById('links')
 
 openbtn.addEventListener('click', ()=> {
-    var links = document.getElementById('links')
     if(links.style.display == "none" ){
 
         links.style.display = "flex"
