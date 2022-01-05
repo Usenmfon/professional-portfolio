@@ -47,6 +47,10 @@ button {
     text-align: right;
 }
 
+a {
+    text-decoration: none;
+}
+
 .about p:nth-child(3) {
     font-size: 2rem;
     font-weight: 700;
