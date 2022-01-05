@@ -21,11 +21,13 @@ nav {
     font-weight: 600;
     color: white;
     margin-left: 5.5rem;
+    margin-top: -6%;
     text-shadow: 0px 4px 30px #C4BFCD;
 }
 
 h5,
-.about p:nth-child(4) {
+.about p:nth-child(4),
+span {
     color: #9F9FA1;
 }
 
@@ -50,6 +52,11 @@ button {
     font-weight: 700;
 }
 
+.about p:nth-child(4),
+.more_about p:last-child {
+    text-align: justify;
+}
+
 .about p,
 #profile_picture img {
     margin-left: 3rem;
@@ -67,15 +74,17 @@ button {
 }
 
 .more_about p:last-child {
-    width: 17rem;
+    width: 16rem;
 }
 
 #profile_picture {
-    background-color: #E0AFA0;
+    background-color: #fcf3f0;
+    display: flex;
+    justify-content: flex-end;
 }
 
 #profile_picture img {
-    width: 250px;
+    width: 100%;
 }
 
 #desktop_profile_picture {
@@ -87,11 +96,7 @@ footer {
     text-align: center;
 }
 
-span {
-    font-weight: 600;
-}
-
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1021px) {
     main {
         display: flex;
         height: 100vh;
@@ -99,13 +104,16 @@ span {
     #logo {
         width: 3.5rem;
         height: 8rem;
+        position: absolute;
+        left: 5rem;
     }
     #logo img {
         margin: auto;
     }
     #stack {
-        font-size: 6rem;
+        font-size: 8rem;
         font-weight: 700;
+        /* border: solid black; */
     }
     #navbtn {
         position: absolute;
@@ -123,11 +131,12 @@ span {
         font-size: 2.5rem;
     }
     .more_about {
-        margin-top: 20rem;
+        margin-top: 16rem;
         font-size: 2rem;
         justify-content: space-around;
-        position: relative;
-        left: 3rem;
+        width: 55%;
+        position: absolute;
+        left: 10rem;
     }
     .more_about p:nth-child(1) {
         width: fit-content;
@@ -140,7 +149,7 @@ span {
     }
     #desktop_profile_picture {
         display: block;
-        background-color: #E0AFA0;
+        background-color: #fcf3f0;
         width: 50vw;
     }
     #desktop_profile_picture img {
