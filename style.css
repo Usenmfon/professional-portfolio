@@ -140,7 +140,7 @@ footer {
         justify-content: space-around;
         width: 55%;
         position: absolute;
-        left: 8rem;
+        left: 4rem;
     }
     .more_about p:nth-child(1) {
         width: fit-content;
