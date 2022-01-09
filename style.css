@@ -53,6 +53,20 @@ footer {
     background-color: #1B1E32;
 }
 
+#project_section {
+    height: 80vh;
+}
+
+#project_avatar img {
+    width: 100px;
+    height: 100px;
+}
+
+#next_prev_buttons i:last-child {
+    margin-left: 4.5rem;
+    margin-top: 1rem;
+}
+
 button {
     color: white;
     background-color: #FE4370;
