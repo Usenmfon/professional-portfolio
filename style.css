@@ -53,6 +53,10 @@ footer {
     background-color: #1B1E32;
 }
 
+#about_buttons button:last-child a {
+    text-decoration: none;
+}
+
 #project_section {
     height: 80vh;
 }
