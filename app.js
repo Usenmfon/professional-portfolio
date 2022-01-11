@@ -1,17 +1,20 @@
 const images = [{
     id: 1,
-    url: './assets/project_avatar/keyboard.jpg',
-    detail: 'Picture of a keyboard and a cup of coffe',
+    url: './assets/project_avatar/character_counter.png',
+    detail: 'A web app that allows the user to insert series of characters which in turn changes the background color the input box!',
+    name: 'Character Counter'
 },
 {
     id: 2,
-    url: './assets/project_avatar/snow.jpg',
-    detail: 'Picture of snow and a house',
+    url: './assets/project_avatar/randomizer.png',
+    detail: 'A random number guessing game where the user is able to pick a difficulty level. The random number is based on the difficulty level choosen.',
+    name: 'Random Number Game'
 },
 {
     id: 3,
-    url: './assets/project_avatar/UsenmfonPassport.jpg',
-    detail: 'Passport photo of Usenmfon Uko',
+    url: './assets/project_avatar/slider.png',
+    detail: 'Implemented a slider image app in carousel format.',
+    name: 'Image Slider'
 },
 ]
 
@@ -27,9 +30,11 @@ let mode = document.querySelector(".mode");
 
 var photo = document.getElementsByTagName('img')[1]
 var details = document.getElementById('project_details')
+var project_name = document.getElementById('project_name')
 
 photo.setAttribute("src", images[slidePosition].url)
 details.textContent = images[slidePosition].detail
+project_name.textContent = images[slidePosition].name
 
 document
     .getElementById("button--next")
@@ -52,6 +57,8 @@ function moveToNextSlide(totalSlides) {
     }
     photo.setAttribute("src", images[slidePosition].url)
     details.textContent = images[slidePosition].detail
+    project_name.textContent = images[slidePosition].name
+
 }
 
 function moveToPrevSlide(totalSlides) {
@@ -62,6 +69,8 @@ function moveToPrevSlide(totalSlides) {
     }
     photo.setAttribute("src", images[slidePosition].url)
     details.textContent = images[slidePosition].detail
+    project_name.textContent = images[slidePosition].name
+
 }
 
 function changeMode() {

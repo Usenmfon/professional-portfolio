@@ -98,12 +98,12 @@ footer {
 }
 
 #project_section {
-    height: 80vh;
+    height: 130vh;
 }
 
 #project_avatar img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 300px;
 }
 
 #next_prev_buttons i:last-child {
