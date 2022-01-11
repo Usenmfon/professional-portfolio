@@ -15,7 +15,15 @@ const images = [{
 },
 ]
 
+const openbtn = document.getElementById('openbtn')
+var links = document.getElementById('links')
+
+
 let slidePosition = 0;
+let count = 0;
+
+let body = document.getElementsByTagName("body")[0];
+let mode = document.querySelector(".mode");
 
 var photo = document.getElementsByTagName('img')[1]
 var details = document.getElementById('project_details')
@@ -55,3 +63,26 @@ function moveToPrevSlide(totalSlides) {
     photo.setAttribute("src", images[slidePosition].url)
     details.textContent = images[slidePosition].detail
 }
+
+function changeMode() {
+    if (count < 40) {
+      if (count == 0) {
+        body.style.backgroundColor = "antiquewhite";
+      } else {
+        body.style.backgroundColor = "#ec66ec";
+      }
+      mode.style.transform = `translateX(${(count += 20)}px)`;
+    } else {
+      mode.style.transform = `translateX(${(count = 0)}px)`;
+      body.style.backgroundColor = "#477998";
+    }
+  }
+
+  openbtn.addEventListener('click', ()=> {
+    if(links.style.display == "none" ){
+
+        links.style.display = "flex"
+    } else {
+        links.style.display = "none"
+    }
+})
