@@ -138,13 +138,17 @@ footer {
         font-size: 2.5rem;
     }
     button {
-        width: 15vw;
+        width: 25vw;
         height: 5vh;
         font-size: 2rem;
     }
     .theme>div {
         height: 4vh;
         width: 5vw;
+    }
+    .mode {
+        width: .5em;
+        height: .5em;
     }
     #about_section {
         display: flex;
@@ -159,7 +163,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0 40rem;
+        padding: 0 10rem;
         height: 160vh;
     }
     #project_details {
