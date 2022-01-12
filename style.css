@@ -132,3 +132,45 @@ footer {
     /* margin-top: 1.5rem; */
     text-align: center;
 }
+
+@media only screen and (min-width: 1021px) {
+    body {
+        font-size: 2.5rem;
+    }
+    button {
+        width: 15vw;
+        height: 5vh;
+        font-size: 2rem;
+    }
+    .theme>div {
+        height: 4vh;
+        width: 5vw;
+    }
+    #about_section {
+        display: flex;
+        justify-content: space-around;
+        height: 60vh;
+    }
+    #about_section img {
+        width: 350px;
+        height: 400px;
+    }
+    #project_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 40rem;
+        height: 160vh;
+    }
+    #project_details {
+        height: 20rem;
+    }
+    #project_avatar img {
+        width: 400px;
+        height: 450px;
+    }
+    #next_prev_buttons i:last-child {
+        margin-left: 10rem;
+        margin-top: 2rem;
+    }
+}
