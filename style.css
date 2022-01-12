@@ -129,6 +129,18 @@ a {
     color: white;
 }
 
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 20vw;
+    margin-top: 0;
+}
+
+#media_section span {
+    display: flex;
+}
+
 footer {
     /* margin-top: 1.5rem; */
     text-align: center;
